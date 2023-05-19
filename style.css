@@ -1,0 +1,318 @@
+:root{
+  --white: #05bfdb;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ddd;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #05bfdb;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo span {
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+  }
+  
+  .logo span::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 5px; /* adjust the left value based on the letter spacing */
+    width: 50px; /* adjust the width to cover the "WE OTA" portion */
+    border-bottom: 2px solid black;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header .logo img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  
+  
+  
+  header nav ul li a:hover,
+  header nav ul li a:active {
+    color: white;
+    background-color: #05BFDB;
+  }
+  
+  
+  
+  .banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 59vh;
+    margin-top: 140px;
+    background-color:#F3C5FF;
+    padding: 0 50px;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50px; /* update the left value */
+    transform: translateY(-50%);
+    text-align: left;
+    z-index: 1;
+  }
+  
+  .banner-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ffaaaa;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-left: 50px; /* add margin-left to move the button to the left */
+  }
+  
+  .button:hover {
+    background-color: #ffcccc;
+    color: #fff;
+  }
+  .banner-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 18%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  h1.japanese-word {
+    font-size: 20px;
+  }
+
+  /* BUBBLES */
+
+  .banner .circle1 {
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    transform: translate(-50%, -60%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: red;
+  }
+  
+  
+  .banner .circle2 {
+    position: absolute;
+    top: 50%;
+    right: 18%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #05BFDB;
+  }
+  .banner .circle3 {
+    position: absolute;
+    top: 70%;
+    right: 25%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: yellow;
+  }
+  .banner .circle4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: green;
+  }
+  
+  /* ABOUT */
+  .intro-section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0;
+  }
+  
+  .box {
+    width: calc(25% - 20px);
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #05bfdb;
+    border: 2px solid #05bfdb;
+    flex: 1;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out; /* add transition effect */
+  }
+  
+  .box:hover {
+    transform: scale(1.1); /* zoom effect on hover */
+  }
+  
+  .team .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .team .box img {
+    width: 90%;
+    height: 200px; /* or any other value you prefer */
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+    }
+    
+
+  @media screen and (max-width: 767px) {
+    .box {
+      width: 100%;
+    }
+  }
+
+  .box i {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  /* register */
+  .registration-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+   .container{
+     height: 100%;
+   }
+
+   .card{
+      width:400px;
+      height: 350px;
+      background-color: #ffaaaa;
+   }
+
+   .card-header > h3{
+   color: var(--white);
+   }
+   .input-group >span{
+   background-color: #05BFDB;
+   border: 0;
+   }
+   
+   input:focus{
+    outline:0 0 0 0 !important;
+    box-shadow:#05BFDB !important;
+   }
+    .signup_btn{
+      color: var(--white);
+    }
+    .signup_btn:hover{
+      color: #000;
+      background-color: var(--white);
+    }
+
+
+
+
+  /* more */
+    .more-about-the-site {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-image: url('galaxsi.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      }
+  
+
+     /* for index */
+
+     .card-img-top {
+          width: 300px;
+          height: 200px;
+          object-fit:absolute;
+     }

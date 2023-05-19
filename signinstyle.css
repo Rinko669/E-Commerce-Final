@@ -1,0 +1,68 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url('galaxsi.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .container {
+    height: 100%;
+  }
+  
+  .registration-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 50%; /* set the width of the container to your desired value */
+    height: auto;
+  }
+  
+
+
+   .card{
+      width:400px;
+      height: 350px;
+      background-color: #ffaaaa;
+   }
+
+   .card-header > h3{
+   color: var(--white);
+   }
+   .input-group >span{
+   background-color: #05BFDB;
+   border: 0;
+   }
+   
+   input:focus{
+    outline:0 0 0 0 !important;
+    box-shadow:#05BFDB !important;
+   }
+    .signup_btn{
+      color: var(--white);
+    }
+    .signup_btn:hover{
+      color: #000;
+      background-color: var(--white);
+    }
+
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 15px;
+      }
+      
+      .footer img {
+        width: 100px;
+        height: 100px;
+      }
+      
+
+      /* for index */
