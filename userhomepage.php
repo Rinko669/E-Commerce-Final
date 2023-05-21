@@ -22,7 +22,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="suisegs232.png" alt="logo" />
+        <img src="../suisegs232.png" alt="logo" />
         <span>WE OTAKU</span>
       </div>
       <nav>
@@ -47,7 +47,7 @@
             <h1 class="japanese-word">最も閲覧する あなたの信頼できるアニメショップ</h1>
           <a href="https://www.youtube.com/watch?v=NyUTYwZe_l4&t=5m11s" class="button">View more</a>
         </div>
-        <img src="ryo.jpg" alt="ayaka" class="banner-image">
+        <img src="../ryo.jpg" alt="ayaka" class="banner-image">
         <div class="big-circle"></div>
         <div class="small-circle"></div>
       </div> 
@@ -56,7 +56,7 @@
         <h2>About Us</h2>
         <div class="boxes-container">
           <div class="box">
-            <img src="./pictures/Bicol_University.png" alt="BU" width="100">
+            <img src="../pictures/Bicol_University.png" alt="BU" width="100">
             <h3>Our Story</h3>
             <p>We are bona fide students of Bicol University, taking up Information Technology as our course.<br>
             <br> This WE OTAKU was founded by the following student below as a part for our<br> E-commerce requirement project.</p>
@@ -98,7 +98,7 @@
       <h2>Our Team</h2>
       <div class="boxes-container team">
         <div class="box">
-          <img src="./pictures/Yukino.webp" alt="Team Member 1" width="200">
+          <img src="../pictures/Yukino.webp" alt="Team Member 1" width="200">
           <h3>Ian Chester Bufete </h3>
           <p><strong>CEO, Full-Stack Developer</strong></p>
           <p>• Founder of the We Otaku </p>
@@ -107,7 +107,7 @@
           <p>•Responsible for debugging</p>
         </div>
         <div class="box">
-          <img src="./pictures/Eru_chitanda_1.webp" alt="Team Member 2" width="200px">
+          <img src="../pictures/Eru_chitanda_1.webp" alt="Team Member 2" width="200px">
           <h3>Joshua Allen Bonganay</h3>
           <p><strong>Co-founder and CTO</strong></p>
           <p>• Improves user interactions </p>
@@ -118,7 +118,7 @@
 
         </div>
         <div class="box">
-          <img src="./pictures/Mio.jpg" alt="Team Member 3">
+          <img src="../pictures/Mio.jpg" alt="Team Member 3">
           <h3>Renz Domini Dycoco</h3>
           <p><strong>Project Manager</strong></p>
           <p>• Responsible for delivering the project  </p>
@@ -127,7 +127,7 @@
 
         </div>
         <div class="box">
-          <img src="./pictures/makima.jpg" alt="Team Member 4">
+          <img src="../pictures/makima.jpg" alt="Team Member 4">
           <h3>Joseph Bryan Clutario</h3>
           <p><strong>Backend Developer</strong></p>
           <p>• The one who debugs for the errors of the website  </p>
@@ -200,7 +200,7 @@
         </style>
       <div class="boxes-container">
         <div class="box">
-          <img src="suisegs232.png" alt="BU" width="300">
+          <img src="../suisegs232.png" alt="BU" width="300">
           <h3>WE OTAKU Disclaimers</h3>
           <p>• Product Image in our website is for illustrative only,the actual product may differ<br>
            in color, design,or size.</p>
@@ -217,7 +217,7 @@
             is strictly probihited</p>
         </div>
         <div class="box">
-          <img src="./pictures/anime fig.jpg" alt="" width="300">
+          <img src="../pictures/anime fig.jpg" alt="" width="300">
           <h3>ANIME FIGURINES</h3>
           <p> • We sell authentic anime figures direct from sellers</p>
           <p> • Price may varies we don't sell bootleg figures here</p>
@@ -225,7 +225,7 @@
           <p> • You can also pre-order from us to reserve </p>
         </div>
         <div class="box">
-          <img src="./pictures/Is-Yugioh-Still-Popular-Trading-Card-Game.png" alt="BU" width="300" height="300">
+          <img src="../pictures/Is-Yugioh-Still-Popular-Trading-Card-Game.png" alt="BU" width="300" height="300">
           <h3>Trading Cards</h3>
           <p>• We also sells trading cards like Yu-Gi-Oh,Weihs Schwarz, Pokemon, Battle Spirits, and Duel Monsters </p>
           <p>• Price may varies depending on the rarity of the cards</p>
@@ -233,10 +233,10 @@
         </div>
         <div class="box">
           <div style="float: left; margin-right: 10px;">
-            <img src="./pictures/keqing.jpg" alt="BU" width="200">
+            <img src="../pictures/keqing.jpg" alt="BU" width="200">
           </div>
           <div style="float: right; margin-left: 10px;">
-            <img src="./pictures/manga.jpg" alt="BU" width="200">
+            <img src="../pictures/manga.jpg" alt="BU" width="200">
           </div>
           <div style="clear: both;"></div>
           <h3>And More</h3>

@@ -1,9 +1,7 @@
-<?php
-  include('include/connect.php');
-  include('functions/commonfunction.php');
+<?php 
+include ('include/connect.php');
+ session_start();
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +11,7 @@
     <link rel="icon" href="suisegs232.png" type="image/x-icon"/>
     <link rel="stylesheet" href="style.css"/>
 
-    <title>Homepage</title> 
+    <title>Checkout</title> 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -44,21 +42,11 @@
           <a class="nav-link" href="display_all.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="user_register.php">Register</a>
+          <a class="nav-link" href="userhomepage.php">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a></a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link" href="cart.php">Carts<i class="fa-solid fa-cart-shopping fa-xs" 
-        style="position: relative; top: 2px; left: 5px;"></i><sup><?php cart_item();?></sup></a>
-
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Total Price: <?php total_cart_price();?>/-</a>
-        </li>
-     
-     
       </ul>
       <form class="d-flex" action="search_product.php" method="get">
         <input class="form-control me-2" type="search" placeholder="Search" 
@@ -68,18 +56,14 @@
     </div>
   </div>
 </nav>
-      <!-- Calling cart functions -->
-      <?php
-        cart();
-      ?>
      <!-- second child -->
      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-     <ul class="navbar-nav me-auto">
+      <ul class="navbar-nav me-auto">
       <li class="nav-item">
            <a class="nav-link" href="#">Welcome Guest</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="user_login.php">Login</a>
+        <a class="nav-link" href="#">Login</a>
       </li>
       </ul>
      </nav>
@@ -94,47 +78,22 @@
 
       <!-- fourth child -->
         <div class="row px-1">
-          <div class="col-md-10">
+          <div class="col-md-12">
           <!--WE OTAKU PRODUCTS-->
             <div class="row">
-              <!-- fetch prod --> 
-                 <?php
-                  getIPAddress();
-                   getproducts();
-                   getunique_categories();
-                   getunique_product();
-                   getallproducts();
-                 //  $ip = getIPAddress();  
-               //echo 'User Real IP Address - '.$ip; 
-                  ?>
+                <?php
+                    if (!isset($_SESSION['username'])){
+                   include ('user_login.php');
+                    } else {
+                        include ('payment.php');
+                    }
+                    
+                    ?>
                        <!-- row end--> 
                            </div>
                            <!-- col end -->
                               </div>
-                            <div class="col-md-2 bg-secondary p-0">
-                              <!-- Types of Product-->
-                              <ul class="navbar-nav me-auto text-center">
-                                <li class="nav-item bg-info">
-                                  <a href="#" class="nav-link text-light"><h4>Types of Product</h4>
-                                  </a>
-                                </li>
-
-                                <?php
-                                       getproduct();
-                                       ?>
-                              </ul>
-                              <!-- Category of Product--> 
-                              <ul class="navbar-nav me-auto text-center">
-                                <li class="nav-item bg-info">
-                                  <a href="#" class="nav-link text-light"><h4>Category</h4>
-                                  </a>
-                                </li>
-                                  
-                                <?php
-                                 getcategories();
-                                ?>
-                              </ul>
-                                </div>
+                           
                                  </div>
 
               <!-- last child-->
@@ -142,7 +101,7 @@
                   include('./include/footer.php');
                
                ?>
-
+      </div>
 
 
 

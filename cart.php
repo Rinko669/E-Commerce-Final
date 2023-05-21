@@ -54,7 +54,7 @@
           <a class="nav-link" href="display_all.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="userhomepage.php">Register</a>
+          <a class="nav-link" href="user_register.php">Register</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a></a>
@@ -178,17 +178,17 @@
          $result= mysqli_query($con, $cart_query);
          $result_count=mysqli_num_rows($result);
          if ($result_count>0){
-                 echo"   <h4 class='px-3'>Subtotal:<strong class='text-info'> $total_price/-</strong></h4>
-                 <input type='submit' value='Continue Shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>
-        <button class='bg-danger px-2 py-3 border-0 mx-3'><a href='checkout.php' class='text-light text-decoration-none'>Checkout</a></button>";
-         } else
-         {
-          echo "  <input type='submit' value='Continue Shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>";
-         }
-         if (isset($_POST['continue_shopping'])) {
-           echo "<script>window.open('index.php','_self')</script>" ;
-         }
-          ?>
+          echo"   <h4 class='px-3'>Subtotal:<strong class='text-info'> $total_price/-</strong></h4>
+          <input type='submit' value='Continue Shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>
+ <button class='bg-danger px-2 py-3 border-0 mx-3'><a href='checkout.php' class='text-light text-decoration-none'> Checkout</a></button>";
+  } else
+  {
+   echo "  <input type='submit' value='Continue Shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>";
+  }
+  if (isset($_POST['continue_shopping'])) {
+    echo "<script>window.open('index.php','_self')</script>" ;
+  }
+   ?> 
            
 
 
@@ -196,6 +196,7 @@
   </div>
 </div>
       </div>
+      </form>
        <!-- functions to remove items -->
   <?php
      function remove_cart_item(){
@@ -213,7 +214,6 @@
     }
     echo $remove_item=remove_cart_item();
   ?>
-  </form>
               <!-- last child-->
                <?php 
                   include('./include/footer.php');
